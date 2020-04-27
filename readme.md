@@ -1,4 +1,5 @@
 part 1: down essential wiki dumps
+
 1 Download wikidata dumps from https://dumps.wikimedia.org/wikidatawiki/entities/
 --latest-all.json.bz2 (52.6G)
 
@@ -9,6 +10,7 @@ part 1: down essential wiki dumps
 --dewiki-20200420-pages-articles.xml.bz2 (5.2G)
 
 part 2: pre-processing with datapedia dumps
+
 3 Import spl files into mysql. Geting restriction mapping from page_restrictions.sql, geting wikipedia page_id and page_title mapping from page.sql, geting wikipedia page_id and wikidata entity_id mapping from page_props.sql
 
 python gen_redirction.py
