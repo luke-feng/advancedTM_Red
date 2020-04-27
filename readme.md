@@ -1,4 +1,4 @@
-part 1: down essential wiki dumps
+part 1: Download essential wiki dumps
 ===
 
 #### 1 Download wikidata dumps from https://dumps.wikimedia.org/wikidatawiki/entities/
@@ -10,7 +10,7 @@ part 1: down essential wiki dumps
 --dewiki-20200420-page_restrictions.sql.gz (21M)
 --dewiki-20200420-pages-articles.xml.bz2 (5.2G)
 
-part 2: pre-processing with datapedia dumps
+part 2: Pre-processing with datapedia dumps
 ===
 
 #### 3 Import spl files into mysql. Geting restriction mapping from page_restrictions.sql, geting wikipedia page_id and page_title mapping from page.sql, geting wikipedia page_id and wikidata entity_id mapping from page_props.sql
@@ -24,7 +24,7 @@ Using write_to_one_file.py to write all files into one file.
 python WikiExtractor_01.py -o [output file path] -l input
 python write_to_one_file.py
 
-part 3: deal with wikidata dumps
+part 3: Deal with wikidata dumps
 ===
 
 #### 6 Geting all entity_ID, name and description from wikidata dump
@@ -36,7 +36,7 @@ python change_wikiID.py
 #### 8 For all other entities not in wikipedia file, integrate them to wikipedia articles file.
 python integrate_wikidata_wikipedia.py
 
-part 4: train entity embedding
+part 4: Train entity embedding
 ===
 
 In this part, we almost followed (https://github.com/dalab/deep-ed ), but we have changed some parts of the code, and adapted it to en wiki data.
@@ -75,7 +75,7 @@ th entities/relatedness/filter_wiki_hyperlink_contexts_RLTD.lua -root_data_dir $
 mkdir $DATA_PATH/generated/ent_vecs
 th entities/learn_e2v/learn_a.lua -root_data_dir $DATA_PATH | log_train_entity_vecs
 
-part 5: propressing with HIPE file
+part 5: Propressing with HIPE file
 ===
 #### 19 pre-procssing HIPE to AIDA and end2end EL requested file format
 python prepro_hipe.py
