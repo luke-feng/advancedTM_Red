@@ -1,0 +1,28 @@
+
+[34mBANNER : ;obj-maxm;wiki-canonical-hyperlinks;hypCtxtL-10;numWWpass-200;WperE-20;w2v;negW-5;ents-RLTD;unigP-0.6;bs-500;ADAGRAD-lr-0.3[39m	
+
+===> RUN TYPE: float	
+==> running on CPU	
+==> Loading rel_txtfilename/Users/chaofeng/end2end_neural_el/deep-ed/basic_data/relatedness/validate.svm	
+==> Loading relatedness validate	
+  ---> from t7 file.	
+==> Loading rel_txtfilename/Users/chaofeng/end2end_neural_el/deep-ed/basic_data/relatedness/test.svm	
+==> Loading relatedness test	
+  ---> from t7 file.	
+==> Loading relatedness thid tensor	
+  ---> from t7 file.	
+    Done loading relatedness sets. Num queries test = 3319. Num queries valid = 3673. Total num ents restricted set = 48524	
+==> Loading entity wikiid - name map	
+  ---> from t7 file: /Users/chaofeng/end2end_neural_el/deep-ed/generated/ent_name_id_map_RLTD.t7	
+    Done loading entity name - wikiid. Size thid index = 48524	
+==> Loading common w2v + top freq list of words	
+  ---> from t7 file.	
+==> Loading word freq map with unig power [31m0.6[39m	
+    Done loading word freq index. Num words = 145691; total freq = 386576707	
+==> Loading w2v vectors	
+  ---> from t7 file.	
+    Done reading w2v data. Word vocab size = 145691	
+
+==> Init entity embeddings matrix. Num ents = 48524	
+write_finish	
+Init entity embeddings with average of title word vectors to speed up learning.	
