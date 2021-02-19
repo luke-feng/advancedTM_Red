@@ -1,3 +1,6 @@
+![image](https://github.com/luke-feng/advancedTM_Red/blob/master/poster.png)
+
+
 part 1: Download essential wiki dumps
 ===
 
